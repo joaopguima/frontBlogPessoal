@@ -1,6 +1,8 @@
 import React from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
 import './App.css';
-
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -15,14 +17,17 @@ import ListaPostagens from './postagens/listaPostagens/ListaPostagens';
 import FormularioPostagem from './postagens/formularioPostagem/FormularioPostagem';
 import DeletarPostagem from './postagens/deletarPostagem/DeletarPostagem';
 import Perfil from './paginas/perfil/Perfil';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
+  
   return (
     <>
-    <AuthProvider>
+      <AuthProvider>
+      <ToastContainer />
         <BrowserRouter>
-          <Navbar />
+        <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
               <Route path="/" element={<Login />} />
@@ -42,8 +47,9 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
-        </AuthProvider>
+      </AuthProvider>
     </>
   );
 }
+
 export default App;

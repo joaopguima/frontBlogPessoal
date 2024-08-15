@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import CardTemas from '../cardTemas/CardTemas';
-import { AuthContext } from '../../paginas/contexts/AuthContext';
+import { AuthContext } from '../../contexts/AuthContext';
 import Tema from '../../models/Tema';
 import { useNavigate } from 'react-router-dom';
 import { buscar } from '../../service/Service';

@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Tema from '../../models/Tema';
-import { AuthContext } from '../../paginas/contexts/AuthContext';
+import { AuthContext } from '../../contexts/AuthContext';
 import { buscar, atualizar, cadastrar } from '../../service/Service';
 
 

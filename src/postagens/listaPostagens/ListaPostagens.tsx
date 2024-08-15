@@ -3,7 +3,7 @@ import CardPostagem from '../cardPostagem/CardPostagem';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import Postagem from '../../models/Postagem';
-import { AuthContext } from '../../paginas/contexts/AuthContext';
+import { AuthContext } from '../../contexts/AuthContext';
 import { buscar } from '../../service/Service';
 
 

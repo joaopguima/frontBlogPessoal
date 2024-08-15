@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Tema from '../../models/Tema'
-import { AuthContext } from '../../paginas/contexts/AuthContext'
+import { AuthContext } from '../../contexts/AuthContext'
 import { buscar, deletar } from '../../service/Service'
 
 function DeletarTema() {

@@ -4,11 +4,10 @@ import { AuthContext } from "../../contexts/AuthContext";
 
 function Footer() {
 
-  const { usuario, handleLogout } = useContext(AuthContext)
+  const { usuario } = useContext(AuthContext)
 
   let footerComponent
   
-  const data = new Date().getFullYear()
 
   if (usuario.token !== '') {
     footerComponent = ( 

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CardTemas from '../cardTemas/CardTemas';
 import { AuthContext } from '../../contexts/AuthContext';
 import Tema from '../../models/Tema';
@@ -11,7 +11,7 @@ import { toastAlerta } from '../../util/toastAlerta';
 function ListaTemas() {
   const [temas, setTemas] = useState<Tema[]>([]);
 
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const { usuario, handleLogout } = useContext(AuthContext);
   const token = usuario.token;

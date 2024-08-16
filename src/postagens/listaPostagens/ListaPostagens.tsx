@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import CardPostagem from '../cardPostagem/CardPostagem';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +11,7 @@ import { toastAlerta } from '../../util/toastAlerta';
 function ListaPostagens() {
   const [postagens, setPostagens] = useState<Postagem[]>([]);
 
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const { usuario, handleLogout } = useContext(AuthContext);
   const token = usuario.token;

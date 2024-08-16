@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { AuthContext } from "../../contexts/AuthContext";
 
@@ -8,7 +8,7 @@ function Footer() {
 
   let footerComponent
   
-  let data = new Date().getFullYear()
+  const data = new Date().getFullYear()
 
   if (usuario.token !== '') {
     footerComponent = ( 
